@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@media (max-width: 1230px) {
+    .cabecalho{
+        width: 800px;
+    }
+    .cabecalho__titulo{
+        font-size: 24px;
+    }
+
+    .apresentacao{
+        max-width: 768px;
+    }
+    .container{
+       flex-direction: column; 
+       padding-bottom: 20px;
+    } 
+    .apresentacao__conteudo__mensagem__copiar{
+        width: 660px;
+    }
+}
+
+
+
+@media (max-width: 860px) {
+    .cabecalho{
+        width: 420px;
+    }
+    .cabecalho__titulo{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .apresentacao{
+        max-width: 400px;
+    }
+
+    .apresentacao__conteudo,
+    .apresentacao__conteudo__lateral{
+        display: flex;
+        align-items: center;
+    }
+
+    .apresentacao__conteudo__mensagem,
+    .apresentacao__conteudo__mensagem__copiar{
+        width: 380px;
+    }
+    .botoes{
+        flex-direction: column;
+    }
+    .btn__encriptar,
+    .btn__desencriptar {
+        width: 380px;
+    }
+    .btn__copiar {
+        width: 380px;
+    }
+ 
+}
+
+ 

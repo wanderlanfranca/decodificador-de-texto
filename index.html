@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <script src="https://kit.fontawesome.com/b54ca6665e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="cabecalho">
+            <div class="cabecalho__logo">
+                <img class="cabecalho__logo__img" src="assets/images/logo (1).jpeg" alt="Logo de cabecalho">
+                <h1 class="cabecalho__titulo"> Codificador e Decodificador de Texto </h1>
+            </div>
+            <nav class="header__menu">
+                <a href="https://www.linkedin.com/in/wanderlan-fran%C3%A7a/" target="_blank"><img src="assets/images/linkedin.png" alt="Linkedin"/></a>
+                <a href="https://github.com/wanderlanfranca" target="_blank"><img src="assets/images/github.png" alt="GitHub"/></a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="apresentacao">
+        <div class="container">
+            <section class="apresentacao__conteudo">
+                <textarea class="apresentacao__conteudo__mensagem" placeholder="Dite seu texto aqui" onclick="resetButton()"></textarea>
+                <h5 class="apresentacao__conteudo__informativo">ATENÇÃO: ( Apenas letras minúsculas e sem acento )</h5>
+                <div class="botoes">
+                    <button class="btn__encriptar" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="btn__desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+                </div>
+            </section>
+
+            <section class="apresentacao__conteudo__lateral">
+                <textarea  id="texto" class="apresentacao__conteudo__mensagem__copiar" onclick="resetButton()"></textarea>
+                <button id="copyButton" class="btn__copiar" onclick="copiar()"> <i style="margin-right: 5px;" class="fa-solid fa-copy"></i>Copiar</i></button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__copy">Copyright - Todos os direitos reservados a Wanderlan França<p>
+    </footer>
+    
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
